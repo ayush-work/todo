@@ -1,6 +1,6 @@
 import React from "react";
 
-const Todo = ({ text, curDate, editTodo, handleComplete, id, handleEdit }) => {
+const Todo = ({ text, curDate, handleComplete, id, handleEdit }) => {
   return (
     <>
       <div className="todo-body">

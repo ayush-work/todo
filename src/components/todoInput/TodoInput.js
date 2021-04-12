@@ -1,5 +1,4 @@
 import React from "react";
-import { useState, useEffect } from "react";
 
 const TodoInput = ({ text, handleChange, handleSubmit, editItem }) => {
   return (

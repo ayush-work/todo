@@ -1,6 +1,6 @@
 import TodoList from "./components/todoList/TodoList";
 import TodoInput from "./components/todoInput/TodoInput";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import moment from "moment";
 import { v4 as uuidv4 } from "uuid";
 function App() {

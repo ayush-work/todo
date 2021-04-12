@@ -1,9 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Todo from "../todo/Todo";
 
 const TodoList = ({ allTasks, clearAll, handleComplete, handleEdit }) => {
-  const [edit, setEdit] = useState(false);
-
   return (
     <>
       <h2>TODO LIST</h2>
