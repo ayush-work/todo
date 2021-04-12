@@ -1,13 +1,134 @@
-body {
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  border: 0;
+  padding: 0;
+}
+body {
+  max-width: 1366px;
+  margin: 0 auto;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+h2 {
+  margin-bottom: 0.5em;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App {
+  max-width: 40%;
+  height: 90vh;
+  margin: 0 auto;
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.todo-body {
+  border-radius: 5px;
+  padding: 0.5em 1em;
+  margin-bottom: 2em;
+  max-width: 100%;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.todo-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-y: scroll;
+  width: 100%;
+}
+.todo-wrapper::-webkit-scrollbar {
+  display: none;
+}
+.todo-text {
+  width: 70%;
+}
+.todo-text h1 {
+  color: #203546;
+}
+.todo-text h1::first-letter {
+  text-transform: capitalize;
+}
+.todo-text h2 {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #a3a3a3;
+}
+.todo-actions {
+  display: flex;
+  justify-content: space-between;
+  width: 20%;
+}
+.todo-actions i {
+  color: red;
+}
+.todo-form {
+  margin: 1em 0;
+  border-radius: 5px;
+  width: 100%;
+  background-color: #f3f3f3;
+  padding: 0.5em;
+  font-size: 2rem;
+}
+.todo-form form {
+  display: flex;
+  justify-content: space-between;
+}
+.todo-form input {
+  background-color: transparent;
+  width: 80%;
+  padding: 0.5em;
+  font-size: 1rem;
+}
+
+.btn {
+  border-radius: 5px;
+  padding: 0.5em;
+  font-size: 1rem;
+  color: white;
+  font-weight: 500;
+  background-color: red;
+}
+.btn-group {
+  width: 25%;
+  display: flex;
+  justify-content: space-around;
+}
+.unselected {
+  border-radius: 5px;
+  border: 2px solid red;
+  padding: 0.5em;
+  font-size: 1rem;
+  color: red;
+  font-weight: 500;
+  background-color: transparent;
+}
+
+footer {
+  max-width: 60%;
+  color: #a3a3a3;
+  font-size: 0.7rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 10px;
+}
+.update {
+  background-color: green;
+}
+button:focus {
+  outline: none;
+}
+button:hover,
+i:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+strong {
+  font-weight: bolder;
 }
